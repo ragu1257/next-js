@@ -1,4 +1,4 @@
-export default function Docs({params}: {params: {slug: string[]}}) {
+export default function Docs({params}: {params: Readonly<{slug: string[]}>}) {
   
   if(params.slug?.length === 2){
     return (

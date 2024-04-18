@@ -16,7 +16,33 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <header>
+          <nav>
+            <ul style={{ display: "flex", alignItems: "center", justifyContent: "space-around", background: "#037290", color: "#fff" }}>
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="/docs">Docs</a>
+              </li>
+              <li>
+                <a href="/login">Login</a>
+              </li>
+              <li>
+                <a href="/register">Register</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <div style={{ marginTop: "100px",   height: "100vh"}}>
+        {children}
+        </div>
+ 
+        <footer style={{ display: "flex", alignItems: "center", justifyContent: "space-around", background: "#037290", color: "#fff" }}>
+          <p>Footer</p>
+        </footer>
+      </body>
     </html>
   );
 }
