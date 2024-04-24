@@ -28,6 +28,10 @@ const Links = [
     href: "/products",
     label: "Products",
   },
+  {
+    href: "/complex-dashboard",
+    label: "Complex Dashboard",
+  }
 ];
 export default function RootLayout({
   children,
