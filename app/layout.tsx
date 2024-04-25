@@ -13,6 +13,10 @@ const Links = [
     label: "Home",
   },
   {
+    href: "/photo-feed",
+    label: "Foto Feed",
+  },
+  {
     href: "/docs",
     label: "Docs",
   },
