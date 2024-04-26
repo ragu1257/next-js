@@ -3,7 +3,7 @@ import { StaticImageData } from 'next/image';
 import mountains from './photos/mountain.jpg';
 import beach from './photos/beach.jpg';
 interface WonderImages {
-  id: number;
+  id: string;
   title: string;
   src: StaticImageData;
   description: string;
